@@ -7,21 +7,87 @@ body {
   font-family: Roboto, sans-serif;
 }
 
+/*  image alignement and style */
 img {
   width: 600px;
 }
+
+.content {
+  display: flex;
+  flex: 1;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
+  
 }
 
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
-  padding: 8px 24px;
+  padding: 10px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+
+
+/*   Header and footer alignment */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/*----footer needs work not lining up---*/
+.footer {
+  display: flex;
+  flex-grow: 1;
+  min-height: 12vh;
+  align-items: stretch;
+  flex-direction: column-reverse;
+}
+
+
+.left-links {
+  display: flex;
+  gap: 20px;
+  padding: 0px;
+  margin-left: 10px;
+  justify-content;
+}
+
+.right-links{
+  display: flex;
+  margin-right: 10px;
+  align-self: end;
+  gap: 20px;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.color {
+  display: flex;
+  background-color: lightgrey;
+  border-radius: 10%;
+  justify-content: space-between;
+
 }
